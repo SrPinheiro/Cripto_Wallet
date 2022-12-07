@@ -1,0 +1,21 @@
+<% x = (Time.now().strftime "%H").to_i %>
+
+<% if x < 12 %>
+    Bom dia
+
+  <%elsif  x < 18%>
+    Boa tarde
+  <%else %>
+    Boa Noite
+<%end %>
+
+
+
+<strong><%=@nomeLider %></strong>
+<p> Data atual: <%= dataAtual %> </p>
+
+<%= render "menu" %>
+
+<p>Você esta cursando: <strong><%=@curso%></strong></p>
+
+
